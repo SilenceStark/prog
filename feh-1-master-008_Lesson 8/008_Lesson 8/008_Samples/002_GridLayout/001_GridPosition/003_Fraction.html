@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid fraction</title>
+    <meta charset="utf-8" />
+    <style>
+        .grid {
+            /*Grid разметка контейнера*/
+            display: grid;
+            /*Единица длины fr представляет собой долю (fraction) доступного пространства
+            в грид-контейнере и позволяет создавать эластичные (flexible) грид-треки.
+            grid-template-columns: 3fr 1fr 1fr;*/
+            /*Совмещенная схема отображения колонок*/
+            grid-template-columns: 3fr 1fr 250px;
+            grid-template-rows: 200px 100px 100px 100px;
+            grid-column-gap: 25px;
+            grid-row-gap: 5px;
+            background-color: lightgray;
+          
+        }
+
+        .grid div {
+            background-color: #1b67a8;
+            border: 1px solid #212941;
+            border-radius: 5px;
+            padding: 8px 15px;
+            color: #ffffff;
+            /* font-size: 18px;*/
+        }
+
+        .grid div:nth-child(odd) {
+            background-color: #1ac66c;
+        }
+
+
+        @media screen and (max-width: 750px) {
+            .element {
+                font-size: 25px !important;
+            }
+        }
+
+        @media screen and (min-width: 750px) and (max-width: 1000px){
+            .element {
+                font-size: 5px !important;
+                background: red !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="element">
+         
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quo nulla deserunt. Repudiandae, beatae.
+            Quisquam pariatur, praesentium odit adipisci voluptate suscipit commodi, earum, eveniet alias neque rerum
+            consequatur consectetur et!
+            Dolor doloremque eveniet velit? Reiciendis molestiae a sit quae harum tempora. Quia nemo quod accusantium
+            delectus odit sapiente quidem saepe, cumque praesentium, sit sint ipsam quae recusandae hic explicabo
+            quisquam.
+            Libero vero quod ipsum nam id qui accusantium pariatur voluptatibus tempora. Aliquam consequatur ut
+            asperiores natus consectetur quod labore fuga est ipsum nesciunt eligendi laudantium vero cumque, doloremque
+            quo hic.
+        </div>
+        <div>item-2</div>
+        <div>item-3</div>
+        <div>item-4</div>
+        <div>item-5</div>
+        <div>item-6</div>
+        <div>item-7</div>
+        <div>item-8</div>
+        <div>item-9</div>
+        <div>item-10</div>
+    </div>
+</body>
+
+</html>

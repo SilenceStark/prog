@@ -1,0 +1,41 @@
+:root{
+    font-size: 16px;
+    
+}
+body {
+    margin: 0;
+}
+.header {
+    background-image: url("../images/backgroundheader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_content {
+    padding: 531px 0 145px 215px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.sertiz {
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-bottom: 16px;
+}
+.awesome_blah {
+    font-size:1.12rem;
+    padding-bottom: 30px;
+}
+.we_make_blah{
+    font-size: 3.37rem;
+    width: 831px;
+    text-transform: uppercase;
+    padding: 45px 30px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: hsla(0, 0%, 0%, 0.4);
+}
+.we_blah{
+    color: #f1ad1d;
+    display: inline-block;
+    padding-right: 51px;
+}

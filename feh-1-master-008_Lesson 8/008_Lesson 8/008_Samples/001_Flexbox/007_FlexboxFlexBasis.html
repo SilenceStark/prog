@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox flex-basis</title>
+	<style>
+		.container{
+			/*создаем Flex контейнер */
+			display: flex;
+			/*главная ось*/
+			flex-direction:row;
+			 /*выравниваниваем элементы по главной оси.*/
+			justify-content: center; 
+			/*перпендикулярная ось.*/
+			align-items: stretch;
+			width: 100%;
+			height: 480px;
+			background-color: lightblue;
+		}
+
+		.item{
+		/*отвечает за базовый размер элемента по главной оси до того как он изменится(Принимает значения в px, em, %)*/
+			flex-basis:100px; 
+			height: 100px;
+			margin: 5px;
+			text-align: center;
+			color: white;
+		}
+
+		.red{
+			/*этот элемент будет иметь базовый размер по главной оси в 300px*/
+			flex-basis:300px;			
+			background-color: red;
+		}
+		.orange{
+            	flex-basis:200px;	
+			background-color: orange;
+		}
+		.green{
+            flex-basis:100px;	
+			background-color: green;
+		}
+		.cyan{
+                  flex-basis:100px;
+			background-color: cyan;
+		}
+		.gold{
+                   flex-basis:100px;
+			background-color: gold;
+		}
+		.pink{
+                   flex-basis:50px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item red">1</div>
+		<div class="item orange">2</div>
+		<div class="item green">3</div>
+		<div class="item cyan">4</div>
+		<div class="item gold">5</div>
+		<div class="item pink">6</div>
+	</div>
+	<!--https://medium.com/@stasonmars/%D1%80%D0%B0%D0%B7%D0%BD%D0%B8%D1%86%D0%B0-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-width-%D0%B8-flex-basis-f34e658ce6a2-->
+</body>
+</html>

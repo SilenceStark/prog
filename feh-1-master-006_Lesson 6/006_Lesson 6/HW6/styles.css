@@ -1,0 +1,171 @@
+body {
+    background-color: #3a4965;
+}
+
+.wrapper {
+    width: 1195px;
+    height: 735px;
+    margin: auto;
+    font-family: 'Arimo', sans-serif;
+    text-transform: uppercase;
+    border-collapse: collapse;
+}
+
+b {
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+th, td { 
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    color: #333;
+}
+
+thead th:first-of-type::before,
+tbody td:nth-child(2)::before,
+tfoot td:nth-child(2)::before {
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    background: linear-gradient(to left, rgba(0,0,0, 0.2), transparent);
+}
+
+thead th::after, 
+tbody td::after,
+tfoot td::after {
+    content: '';
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(0,0,0, 0.2), transparent);
+}
+
+thead th:last-of-type::after,
+tbody td:first-child::after,
+tfoot td:first-child::after,
+tbody table td::after,
+tbody table td:nth-child(2)::before {
+    display: none;
+}
+
+thead th {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+thead th,
+thead td {
+    height: 70px;
+}
+
+thead th.ultimate {
+    font-size: 30px;
+}
+
+tfoot td {
+    height: 110px;
+    background: #eee;
+}
+
+tfoot td:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+tfoot td:first-child {
+    background: #ddd;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: #e3e3e3;
+}
+
+tbody tr:nth-child(even) td  {
+    background-color: #f2f2f2;
+}
+
+tbody tr:first-child td {
+    background-color: #fafafa;
+}
+
+.prices td:first-child {
+    font-size: 60px;
+    text-align: right;
+}
+
+.prices td:last-child {
+    font-size: 24px;
+    text-align: left;
+    vertical-align: middle;
+} 
+
+.prices tr:last-child td {
+    font-size: 18px;
+    text-align: left;
+    vertical-align: top;
+}
+
+button {  /*кнопка которая наверное должна быть ссылкой*/
+    box-sizing: border-box;
+    background-color: #484848;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    width: 190px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid transparent;
+    border-width: 9px 0;
+}
+
+button:hover {
+    border-bottom-color: rgba(0,0,0,0.1);
+}
+
+.standard {   
+    background: #89c331;
+}
+
+.ultimate {
+    background: #f04a56;
+}
+
+.premium {
+    background: #20807c;
+}
+
+.your-plan {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.top-phrase {                             
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.bottom-phrase {                             
+    font-size: 30px;
+    vertical-align: top;
+}
+
+i { 
+    vertical-align: middle;
+    font-size: 24px;
+    color: #848484;
+    padding-right: 10px;
+}

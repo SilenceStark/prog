@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div>
+                <p>
+                    <label for="firstname"><b>*First name:</b></label>
+                    <input id="firstname" type="text" name="firstname" tabindex="1" required>
+                </p>
+            </div>
+
+            <div>
+                <p><label for="midmane">Middle name:</label>
+                    <input id="midname" type="text" name="midname" tabindex="2">
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <label for="lastname"><b>*Last name:</b></label>
+                    <input id="lastname" type="text" name="lastname" tabindex="4" required>
+                </p>
+            </div>
+        </fieldset>
+
+        <Fieldset>
+            <legend> Address</legend>
+
+            <div>
+                <p><label for="address">Adress:</label>
+
+                    <input id="address" type="text" name="adress" tabindex="5">
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <lable for="place">City or Town:</lable>
+                    <input id="place" type="text" name="place" tabindex="6">
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <label for="state">State:</label>
+                    <select id="state" name="state">
+                        <option selected disabled>Choose a State</option>
+                        <option value="mainstate">Main state</option>
+                        <option value="midstate"> Middle state</option>
+                        <option value="weststate"> West state</option>
+                    </select>
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <label for="zipcode"><b>*Zip code:</b></label>
+                    <input id="zipcode" type="number" name="zipcode" required>
+                </p>
+            </div>
+        </Fieldset>
+    </form>
+</body>
+
+</html>

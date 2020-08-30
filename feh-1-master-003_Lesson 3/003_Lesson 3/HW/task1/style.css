@@ -1,0 +1,37 @@
+p {
+    transition: all .2s;
+    width: 500px;
+}
+p:hover {
+    color: #154088;
+    font-size: 20px;
+}
+#p1 {
+    border-style: dashed;
+}
+#p2{
+    border-style: dotted;
+}
+#p3 {
+    border-style: solid;
+}
+#p4 {
+    border-style: double;
+}
+.p5{
+    border-style: groove;
+}
+.p6 {
+    border-style: ridge;
+   
+}
+.p7 {
+    border-style: inset;
+}
+.p8 {
+    border-style: outset;
+}
+/*маленький експеримент, вроде работает))*/
+.p6::first-line { 
+    color: rgb(142, 43, 151);
+}

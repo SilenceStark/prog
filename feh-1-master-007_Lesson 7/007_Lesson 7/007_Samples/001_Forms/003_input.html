@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <!-- Для создания описания полей используются элементы label.  Метка связывается с полем посредством атрибута id. -->
+    <form method="post" action="./index.php">
+        <!-- атрибут accesskey позволяет установить комбинацию горячих клавиш, нажав на которые поле становится активным, то есть получает фокус.-->
+        <p>
+            <label for="login" accesskey="k">Логин: </label>
+            <input type="text"  id="login" placeholder="123" />
+        </p>
+
+        <p>
+            <label accesskey="p">Пароль: 
+                <input type="password" name="pass" id="pass" />
+            </label>
+        </p>
+
+        <!-- 
+            input с типом submit отправляет данные на страницу, указанную в атрибуте action тега form.
+            input с типом reset сбрасывает значение всех элементов формы в начальное состояние.
+          -->
+        <p>
+            <input type="reset" value="Сбросить" />
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+</body>
+
+</html>

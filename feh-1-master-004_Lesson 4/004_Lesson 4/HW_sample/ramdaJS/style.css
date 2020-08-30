@@ -1,0 +1,135 @@
+
+
+@font-face {
+	font-family: 'Myriad Pro';
+    src: url('./fonts/MyriadPro-Regular.eot'),
+         url('./fonts/MyriadPro-Regular.woff'),
+         url('./fonts/MyriadPro-Regular.ttf')
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'Myriad Pro'
+}
+
+li,p,a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 60px 100px 30px;
+}
+
+.logo {
+    font-size: 80pt;
+    padding-bottom: 45px;
+}
+
+.logo-2color {
+    color: #4bcaff;
+}
+
+.menu_top {
+    background-color: #35444f;
+    text-align: center;
+}
+
+.menu_top  li {
+    display: inline-block;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    box-sizing: border-box;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    
+}
+
+.menu_top li:hover {
+    background-color: #222f3a;
+    border-color: #818181;
+}
+
+.menu_left {
+    padding: 0;
+    margin: 50px 0;
+    border: solid 1px;
+    width: 345px;
+    display: inline-block; 
+}
+
+.menu_left ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu_left li {
+    font-size: 1.688em;
+    display: block;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.menu_left li:hover {
+    background-color: #dbdbdb;
+    padding: 30px 60px;
+}
+
+.content{
+    float: right;
+    padding-top: 50px;
+    width: calc(100% - 397px);
+    box-sizing: border-box;
+}
+
+.img {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid 1px;
+    text-align: center; 
+    width: 100%;
+    padding: 75px 0;
+}
+
+.main-text {
+    box-sizing: border-box;
+    padding: 25px 30px;
+}
+
+.main-text p {
+    font-size: 1.125em;
+    padding-bottom: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: #b4b7ba;
+    font-size: 1.500rem;
+    display: inline-flex;
+    color: #0c1927;
+}
+
+footer li {
+    padding: 20px;
+    font-size: 1.750rem;
+    box-sizing: border-box;
+    display: inline;
+}
+footer a {
+    text-decoration: none;
+    color: #0c1927;
+}
+footer a:hover {
+    color: #3181a6;
+    text-decoration: underline;
+}
+
+footer p {
+    margin: auto 30px auto auto;
+    float: right;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        .header-container {
+            height: 600px;
+            padding-top: 10%;
+            box-sizing: border-box;
+        }
+
+        .header-container div,
+        .header-container h1 {
+            margin-left: 15%;
+            margin-bottom: 40px;
+            font-size: 3em;
+            color: red;
+        }
+
+        .header-container div {
+            font-size: 2em;
+            color: blueviolet
+        }
+
+        .header-container+p {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center
+        }
+
+        ul {
+            margin-bottom: 150px;
+        }
+
+        ul>li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            list-style: none;
+        }
+
+        div.image {
+            width: 1000px;
+            height: 400px;
+            box-shadow: 2px 2px 30px black;
+            margin: 30px auto;
+
+            transform: all 1s;
+
+        }
+
+        div.image>img {
+            width: 1000px;
+            height: 400px;
+        }
+
+        div.image>img:hover {
+            transform: scale(1.1);
+            box-shadow: 2px 2px 30px blue;
+
+        }
+
+        .cssblockdz {
+            width: 80%;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        .student1,
+        .student2 {
+            width: auto;
+            height: 200px;
+            box-shadow: 2px 2px 30px black;
+            border: 1px dashed black;
+            margin-top: 35px;
+        }
+
+        .student1 .block1,
+        .student2 .block1 {
+            background: rgba(0, 0, 255, .3);
+            height: 50px;
+        }
+    .description{
+        padding: 50px;
+        box-shadow: 2px 2px 30px black;
+        width: 1000px;
+        margin: 0 auto;
+        box-sizing: border-box
+
+    }
+
+    .description:hover{
+        transform: scale(1.1);
+            box-shadow: 2px 2px 30px blue;
+    }
+
+    article > div{
+        margin-bottom: 50px; 
+        font-size: 1.5em
+    }
+
+    .description  header{
+        font-size: 2.5em;
+        color: tomato;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .red{
+        color:red
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1>HTML & CSS </h1>
+        <div class="name-lesson">Bootstrap 4, Принципы построения разметки Flex, Grid.</div>
+    </div>
+
+    <p>Сегодня в уроке</p>
+
+    <ul>
+        <li>Основы Bootstrap 4</li>
+        <li>Flex-box</li>
+        <li>Grid</li>
+        <li>CSS3 Медиазапросы</li>
+    </ul>
+
+    <div class="description">
+        <div class="flax">
+            <header>CSS Flexible Box Layout Module</header>
+            <article>
+                <div>
+                    CSS3 Flexible Box, или просто flexbox — это режим разметки, созданный для упорядочения элементов на
+                    странице таким образом, чтобы они вели себя предсказуемо в случаях, когда разметка страницы
+                    адаптирована под различные размеры экрана и устройства.
+
+                </div>
+                <div>
+                    Во многих случаях флексбоксы лучше блочной модели разметки, поскольку не использует обтекания
+                    (float) и не выполняет схлопывание отступов flex-контейнера и его содержимого (margin collapse).
+
+                </div>
+                <div>
+                    Главной концепцией Flexbox есть возможность изменения высоты и/или ширины его элементов, чтобы лучше
+                    заполнять пространство любого дисплея. Flex-контейнер увеличивает элементы, чтобы заполнить
+                    доступное пространство или уменьшает чтобы предотвратить перекрытие.
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="image"><img src="./img-presentatin/image1.png" alt=""></div>
+    <div class="description">
+        <article>
+        <div>
+            Flex-контейнер- Родительский элемент, в котором содержатся flex-элементы. Каждый дочерний элемент
+            flex-контейнера становится flex-элементом. Текст, который напрямую содержится в flex-контейнере,
+            оборачивается анонимным flex-элементом.
+        </div>
+        <div>
+            Каждый flexible-box шаблон строится по двум осям. Главная ось — это ось, вдоль которой flex-элементы следуют
+            один за другим, а перекрёстная ось перпендикулярна ей.
+
+        </div>
+        <div>
+            Основные преимущества flexbox:
+            <p>1. Все блоки очень легко делаются “резиновыми”, что уже следует из названия “flex”. Элементы могут
+                сжиматься и растягиваться по заданным правилам, занимая нужное пространство. </p>
+            <p>2. Работает выравнивание по вертикали и горизонтали, базовой линии текста. </p>
+            <p>3. Расположение элементов в html не имеет решающего значения. Его можно поменять в CSS. Это особенно
+                важно для некоторых аспектов responsive верстки. </p>
+            <p>4. Элементы могут автоматически выстраиваться в несколько строк/столбцов, занимая все предоставленное
+                место.
+            </p>
+        </div>
+    </article>
+    </div>
+
+    <div class="description">
+        <header>CSS Grid Layout
+            </header>
+        <article>
+               
+               
+                 
+               
+                
+                
+                
+        <p><span class="red"> display: grid; </span>- создание Grid сетки.</p>
+        <p><span class="red">grid-template-columns: 100px 100px 100px; </span> - определениеколичества и размера колонок.</p>
+        <p><span class="red">grid-template-rows: 100px 100px;</span>- определение размера рядов. (Ряды, которым не задана высота, используют высоту по умолчанию). grid-auto-rows:50px; - определяет высоту по умолчанию.
+                </p>
+        <p><span class="red">grid-column-gap:10px; </span>- определяет отступы между колонками.</p>
+        <p><span class="red">grid-row-gap:10px; </span> - определяет отступы между рядами.</p>
+        <p><span class="red">grid-gap:10px;</span> - определяет отступы между рядами и колонками.</p>
+        <p><span class="red">grid-auto-flow:column; </span>- определят порядок отображения элемента.</p>
+        </article>
+    </div>
+
+
+
+    <div class="image"><img src="./img-presentatin/image2.png" alt=""></div>
+    <div class="image"><img src="./img-presentatin/image3.png" alt=""></div>
+  
+
+    <div class="classwork">
+        <h2>Классная работа</h2>
+        <ol>
+            <li>
+                    Выполните макет страницы используя FlexBox модель. Видоизмените страницу под формат автомобилей.
+                <p><img src="./img02.jpg" alt=""></p>
+                </li>
+        </ol>
+    </div>
+    <div>
+            <p class="red" style="text-shadow: 1px 1px 3px black;font-size: 2em; text-align:center; text-transform: uppercase">Обьязательно посмотреть!!!</p>
+        <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_g4NnnZdTxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/RNjnRA0QSug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-fDqBEjfzGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    <div>
+        <h2>ДЗ</h2>
+        <ol>
+            <li>Выполните макет страницы используя CSS3 Grid модель. Видоизмените страницу под формат спортивных новостей. Используйте медиа запросы и шаблоны для адаптивной верстки. (При уменьшении экрана – новости должны выстраиваться в колонку, текст прятаться – и оставаться только картинка с кнопкой на ссылку). 
+                <p><img src="./img01.jpg" alt=""></p>
+            </li>
+            <li><a href="https://html5book.ru/css3-mediazaprosy/">Прочитать о медиазапросах</a></li>
+            <li><a href="https://html5book.ru/css3-transition/">Прочитать о переходах</a></li>
+            <li><a href="https://html5book.ru/css3-transform/">Прочитать о трансформации</a></li>
+            <li><a href="https://html5book.ru/css3-animation/">Прочитать о анимации</a></li>
+
+        </ol>
+    </div>
+ 
+    <br>
+    <br> <br>
+    <br> <br>
+    <br>
+</body>
+
+</html>

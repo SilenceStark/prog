@@ -1,0 +1,23 @@
+body {
+    margin: 0 35%;
+    text-align: end;
+}
+
+fieldset {
+    border-width: 2px 0 0 0;
+    color: navy;
+}
+
+p {
+    color: black;
+    padding-right: 30px;
+}
+
+input,
+select {
+    width: 170px;
+}
+
+legend {
+    padding: 5px;
+}
