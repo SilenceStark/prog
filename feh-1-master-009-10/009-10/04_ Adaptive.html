@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adaptive</title>
+    <style>
+        :root{
+            --size: 1000px
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+@media screen and (min-width: 1000px) and (max-width: 1400px){
+    .header {
+        /*
+        Функция calc() принимает в качестве параметра математическое выражение, результат вычисления которого можно использовать как значение CSS свойства. Выражение может включать операторы +, -, *, / 
+        */
+            min-width: var(--size);
+            max-width: calc(var(--size) + 400px);
+            height: 200px;
+            background: yellow;
+        }
+
+        .main {
+            min-width: var(--size);
+            max-width: calc(var(--size) + 400px);
+            background: blue;
+            height: 400px;
+          
+            display: flex;
+        }
+
+        div.nav {
+           
+            background: blueviolet;
+            height: 400px;
+            width: 30%;
+        }
+
+        div.section {
+           
+            background: brown;
+            width: 70%;
+            height: 400px;
+        }
+
+        .footer {
+            background: coral;
+            min-width: var(--size);
+            max-width: calc(var(--size) + 400px);
+            height: 50px;
+        }
+
+}
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    .header {
+            min-width: 600px;
+            max-width: var(--size);
+            height: 200px;
+            background: bisque;
+        }
+
+        .main {
+            min-width: 600px;
+            max-width: var(--size);
+            background: blue;
+            height: 400px;
+            overflow: auto;
+        }
+
+        div.nav {
+            float: left;
+            background: blueviolet;
+            height: 400px;
+            width: 30%;
+        }
+
+        div.section {
+            float: left;
+            background: brown;
+            width: 70%;
+            height: 400px;
+        }
+
+        .footer {
+            clear: both;
+            background: coral;
+            min-width: 600px;
+            max-width: var(--size);
+            height: 50px;
+        }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+    .header {
+            min-width: 300px;
+            max-width: 600px;
+            height: 200px;
+            background: rgb(025, 145, 255);
+        }
+
+        .main {
+            display: block;
+        }
+
+        div.nav {
+            background: blueviolet;
+            height: 200px;
+            min-width: 300px;
+            max-width: 600px;
+        }
+
+        div.section {
+            background: brown;
+            height: 400px;
+            min-width: 300px;
+            max-width: 600px;
+        }
+
+        .footer {
+            background: coral;
+            min-width: 300px;
+            max-width: 600px;
+            height: 50px;
+        }
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">header</div>
+    <div class="main">
+        <div class="nav">navigation</div>
+        <div class="section">section</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>

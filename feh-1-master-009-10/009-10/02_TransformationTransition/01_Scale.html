@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scale</title>
+    <meta charset="utf-8" />
+    <style>
+        /*
+        CSS3-трансформации позволяют сдвигать, поворачивать и масштабировать элементы. 
+        Трансформации преобразовывают элемент, не затрагивая остальные элементы веб-страницы, 
+        т.е. другие элементы не сдвигаются относительно него.
+        https://html5book.ru/css3-transform/
+        */
+        .block-scale5 {
+            transition: transform 2s ease-in-out;
+        }
+
+        .block-scale5:hover {
+
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block-scale5">
+        <img src="http://www.train-photo.ru/data/media/151/DSC_7906--.jpg" />
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>rotate</title>
+    <meta charset="utf-8" />
+    <style>
+        body, :root {
+            height: 100%;
+        }
+
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .element {
+            background-color: blue;
+            height: 300px;
+            width: 200px;
+            color: black;
+            text-align: center;
+            border: 3px solid rgba(0,0,0,.3);
+            transition: all 2.2s linear;
+        }
+
+        img{
+         
+            width: 100%;
+        }
+
+        .one:active, .two:active, .three:active, .four:active  {
+            color:white;
+        }
+
+        .one:active {
+            transform: rotateX(110deg);
+            background-color: #0074d9;
+        }
+
+        .two:active {
+            transform: rotateY(150deg);
+            background-color: #831a4a;
+        }
+
+        .three:active {
+            transform: rotateZ(120deg);
+            background-color: #439772;
+        }
+         .four:active {           
+            background-color: #ff6a00;
+            /*Функция вращает элемент относительно трех осей.*/
+          transform: rotate3d(1, 1, 1, -60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="element one">
+        <img src="http://www.train-photo.ru/data/media/151/DSC_7906--.jpg" alt="">
+        <p>RotateX</p>
+        
+    </div>
+    <div class="element two">
+        <img src="http://www.train-photo.ru/data/media/151/DSC_7906--.jpg" alt="">
+        <p> RotateY</p>
+    </div>
+    <div class="element three">
+        <img src="http://www.train-photo.ru/data/media/151/DSC_7906--.jpg" alt="">
+       <p> RotateZ</p>
+    </div>
+    <div class="element four">
+        <img src="http://www.train-photo.ru/data/media/151/DSC_7906--.jpg" alt="">
+       <p> Rotate3D</p>
+    </div>
+</body>
+</html>

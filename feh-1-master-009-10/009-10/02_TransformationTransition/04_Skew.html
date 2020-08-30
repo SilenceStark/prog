@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scew</title>
+    <meta charset="utf-8" />
+    <style>
+        :root{
+            --fifty:50px;
+        }
+        .original,
+        .box {
+            border-radius: calc(var(--fifty) - 44px);
+            background: #2db34a;
+            height: calc(var(--fifty) + 45px);
+            line-height: 95px;
+            text-align: center;
+            width: calc(var(--fifty) + 45px);
+        }
+
+        .original {
+            background: #eaeaed;
+            border: 1px dashed #cecfd5;
+            float: left;
+            margin: var(--fifty);
+        }
+
+        .box {
+            transition: transform 2.5s ease-in;
+        }
+
+        .box:hover {
+            transform: skewX(-15deg) skewY(-20deg) scale(.5);
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="original">
+        <div class="box">Box</div>
+    </div>
+
+
+
+</body>
+
+</html>
