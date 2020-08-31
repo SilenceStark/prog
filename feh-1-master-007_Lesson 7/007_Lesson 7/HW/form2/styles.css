@@ -1,0 +1,25 @@
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-between center;
+    width: 500px;
+    text-align: center;
+    border: 3px solid hsla(240, 100%, 50%, .05);
+}
+
+fieldset {
+    border: none;
+}
+
+h1 {
+    background-color: rgba(0, 225, 255, 0.274);
+    margin: 0;
+}
